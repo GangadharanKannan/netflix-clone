@@ -17,7 +17,7 @@ const HeroSection = (props) => {
         <h1 style={{ fontSize: '45px', paddingBottom: '30px'}} className="title text-2xl">{movie?movie.title||movie.name:""}</h1>
         <div className="banner_buttons">
           <Link to={`/Netflix Orginals/${movie?movie.id:''}`} className="button">Play</Link>
-          <button className="button">My List</button>
+          <Link to={'/'} className="button">My List</Link>
         </div>
         <p className="description">{movie?movie.overview:""}</p>
       </div>
