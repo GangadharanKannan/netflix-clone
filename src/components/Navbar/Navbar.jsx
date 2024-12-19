@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-black dark:bg-gray-800 antialiased">
-        <div className="px-2 mx-auto 2xl:container py-4">
+        <div className=" mx-auto 2xl:container py-4">
           <div className="w-[90%] mx-auto flex items-center justify-between">
             <div className="flex items-center space-x-8">
               <div className="shrink-0">

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from '../../axios'
 import { API_KEY,imageUrl } from '../../Constants/Constants'
 import './HeroSection.css'
+import { Link } from 'react-router-dom'
 
 const HeroSection = (props) => {
   const [movie,setMovie] = useState();
@@ -13,12 +14,12 @@ const HeroSection = (props) => {
   return (
     <div style={{ backgroundImage: `url(${movie?imageUrl+movie.backdrop_path:""})`}} className='home'>
       <div className="content">
-        <h1 style={{ fontSize: '45px', paddingBottom: '40px'}} className="title text-2xl">{movie?movie.title||movie.name:""}</h1>
+        <h1 style={{ fontSize: '45px', paddingBottom: '30px'}} className="title text-2xl">{movie?movie.title||movie.name:""}</h1>
         <div className="banner_buttons">
-          <button className="button">Play</button>
+          <Link to={`/Netflix Orginals/${movie?movie.id:''}`} className="button">Play</Link>
           <button className="button">My List</button>
         </div>
-        <h1 className="description">{movie?movie.overview:""}</h1>
+        <p className="description">{movie?movie.overview:""}</p>
       </div>
       <div className="bottomfade"></div>
     </div>

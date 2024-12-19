@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 import { imageUrl } from '../../Constants/Constants'
 
 
-const Row = ({data}) => {
+const Row = ({prop, data}) => {
   return (
-    <Link to={`/${data.id}`}>
+    <Link to={`/${prop.title}/${data.id}`}>
         <img src={imageUrl+data.backdrop_path} alt="" />
     </Link>
   )

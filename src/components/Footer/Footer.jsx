@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <div>
-              <img src={image_net} alt="log" className="h-10" />
+              <img src={image_net} alt="log" className="h-5 md:h-10" />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -18,13 +18,13 @@ const Footer = () => {
               </h2>
               <ul className="text-white dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="https://flowbite.com" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     Netflix
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://tailwindcss.com/"
+                    href="#"
                     className="hover:underline"
                   >
                     Movies
@@ -39,7 +39,7 @@ const Footer = () => {
               <ul className="text-white dark:text-gray-400">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="#"
                     className="hover:underline "
                   >
                     Youtube
@@ -47,7 +47,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="#"
                     className="hover:underline"
                   >
                     Facebook

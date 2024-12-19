@@ -19,7 +19,7 @@ const RowPosters = (props) => {
             movie? movie.map((obj,index)=>{
               return (
                 <>               
-                <Row key={index} data={obj}/>
+                <Row key={index} prop={props} data={obj}/>
                 </>
              )
             }):""
